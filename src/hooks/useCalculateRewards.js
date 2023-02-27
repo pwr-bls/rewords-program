@@ -107,13 +107,12 @@ const useCalculateRewards = () => {
 
   const getIndividualTransactions = useCallback(
     (row) => {
-      let byCustMonth = pointsPerTransaction.filter((tRow) => {
+      return pointsPerTransaction.filter((tRow) => {
         return (
           row.original.custid === tRow.custid &&
           row.original.monthNumber === tRow.month
         );
       });
-      return byCustMonth;
     },
     [pointsPerTransaction]
   );
