@@ -98,6 +98,7 @@ function useCalculateRewards() {
   }, [pointsPerTransaction]);
 
   useEffect(() => {
+    setIsLoading(true);
     fetch().then((data) => {
       setIncomingData(data);
       setTimeout(() => setIsLoading(false), 2000);
