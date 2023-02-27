@@ -16,7 +16,7 @@ const months = [
   "Dec",
 ];
 
-function useCalculateRewards() {
+const useCalculateRewards = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [incomingData, setIncomingData] = useState([]);
   const [summaryByCustomer, setSummaryByCustomer] = useState([]);
@@ -125,5 +125,5 @@ function useCalculateRewards() {
     getIndividualTransactions,
     isLoading,
   };
-}
+};
 export default useCalculateRewards;
