@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import useCalculateRewards from "./hooks/useCalculateRewards";
-import SummaryByCustomer from "./SummaryByCustomer";
-import SummaryByCustomerMonths from "./SummaryByCustomerMonths";
+import SummaryByCustomer from "./components/SummaryByCustomer";
+import SummaryByCustomerMonths from "./components/SummaryByCustomerMonths";
 
 function App() {
   const transactionData = useCalculateRewards();

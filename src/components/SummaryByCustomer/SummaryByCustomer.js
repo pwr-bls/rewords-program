@@ -1,5 +1,5 @@
-import ReactTable from "react-table";
 import React from "react";
+import Table from "../Table/Table";
 
 const totalsByColumns = [
   {
@@ -14,10 +14,9 @@ const totalsByColumns = [
 
 const SummaryByCustomer = ({ transactionData }) => {
   return (
-    <ReactTable
+    <Table
       data={transactionData.totalPointsByCustomer}
       columns={totalsByColumns}
-      defaultPageSize={5}
     />
   );
 };
